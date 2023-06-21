@@ -29,6 +29,7 @@ const [selectedColor, setSelectedColor] = useState("");
         <Color color="violet" setSelectedColor={setSelectedColor}/>
         <Color color="black" setSelectedColor={setSelectedColor}/>
         <Color color="blue" setSelectedColor={setSelectedColor}/>
+        <Color color="pink" setSelectedColor={setSelectedColor}/>
       </div>
     </div>  //last div of container
   )
