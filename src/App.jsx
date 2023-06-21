@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 
-
 //Color Component
 const Color = ({color, setSelectedColor}) => {
   return  (
@@ -36,6 +35,8 @@ const [selectedColor, setSelectedColor] = useState("");
 };
 
 export default App;
+
+
 
 
 
