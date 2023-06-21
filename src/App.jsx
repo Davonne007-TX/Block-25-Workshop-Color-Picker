@@ -10,7 +10,7 @@ const Color = ({color, setSelectedColor}) => {
   </div>
 
   )
-}  //last curly of color component 
+};  //last curly of color component 
 
 
 
@@ -32,7 +32,7 @@ const [selectedColor, setSelectedColor] = useState("");
       </div>
     </div>  //last div of container
   )
-}
+};
 
 export default App;
 
