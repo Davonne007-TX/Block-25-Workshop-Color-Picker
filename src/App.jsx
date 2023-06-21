@@ -31,8 +31,8 @@ const [selectedColor, setSelectedColor] = useState("");
         <Color color="blue" setSelectedColor={setSelectedColor}/>
       </div>
     </div>  //last div of container
-  );
-};
+  )
+}
 
 export default App;
 

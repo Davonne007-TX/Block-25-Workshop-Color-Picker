@@ -25,6 +25,8 @@ h1 {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Lobster", cursive;
+  font-size: 16pt;
 }
 
 #navbar {
