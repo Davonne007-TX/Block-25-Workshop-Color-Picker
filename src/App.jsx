@@ -35,7 +35,11 @@ const [selectedColor, setSelectedColor] = useState("");
         <Color color="blue" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
         <Color color="pink" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
       </div>
+
+      <img src="./images/paint.jpg" alt="paint" className="paint"/>
     </div>  //last div of container
+
+   
   )
 };
 
