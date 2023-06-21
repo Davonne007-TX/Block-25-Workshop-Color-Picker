@@ -1,8 +1,9 @@
-// Write your Color component here
-const Color = (props) => {
-  return <div className="red"></div>
+//Color Component
+const Color = ({color}) => {
+  return <div className={color}></div>
 }
 
+//App Component 
 const App = () => {
   return (
     <div id="container">
@@ -12,9 +13,9 @@ const App = () => {
       </div>
 
       <div id="colors-list">
-        <Color />
-        <Color />
-        <Color />
+        <Color color="violet"/>
+        <Color color="black"/>
+        <Color color="blue"/>
       </div>
     </div>  //last div of container
   );
