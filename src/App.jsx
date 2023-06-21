@@ -2,13 +2,17 @@ import { useState } from 'react';
 
 
 //Color Component
-const Color = ({color, setSelectedColor}) => {
+const Color = ({color, setSelectedColor, selectedColor}) => {
+
+  const border = selectedColor === color ? `${color} selected` : color; 
+
   return  (
   
-  <div className={color}
+  <div className={border}
   onClick={() => setSelectedColor(color)}>
   </div>
 
+ 
   )
 };  //last curly of color component 
 
@@ -26,16 +30,18 @@ const [selectedColor, setSelectedColor] = useState("");
       </div>
 
       <div id="colors-list">
-        <Color color="violet" setSelectedColor={setSelectedColor}/>
-        <Color color="black" setSelectedColor={setSelectedColor}/>
-        <Color color="blue" setSelectedColor={setSelectedColor}/>
-        <Color color="pink" setSelectedColor={setSelectedColor}/>
+        <Color color="violet" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color="red" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color="blue" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color color="pink" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
       </div>
     </div>  //last div of container
   )
 };
 
 export default App;
+
+
 
 
 
