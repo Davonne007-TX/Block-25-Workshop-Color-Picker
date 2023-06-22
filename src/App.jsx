@@ -12,7 +12,6 @@ const Color = ({color, setSelectedColor, selectedColor}) => {
   onClick={() => setSelectedColor(color)}>
   </div>
 
- 
   )
 };  //last curly of color component 
 
@@ -39,7 +38,6 @@ const [selectedColor, setSelectedColor] = useState("");
       <img src="./images/paint.jpg" alt="paint" className="paint"/>
     </div>  //last div of container
 
-   
   )
 };
 
